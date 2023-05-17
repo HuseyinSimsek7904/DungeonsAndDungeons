@@ -30,7 +30,6 @@ class ShopRoom(Room):
         return 1
 
     def start(self):
-        self.player.reset_refunds()
         self.shopkeeper = entity_lib.Shopkeeper(self.game)
         self.shopkeeper.generate_items(self.score)
 
